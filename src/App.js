@@ -1,11 +1,15 @@
 import React from "react";
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    
-    <div>
-      <h1>Tigoni Med</h1>
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route></Route>
+      </Routes>
     </div>
   );
 }
