@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = ({user, setUser}) => {
@@ -12,11 +13,11 @@ const Navbar = ({user, setUser}) => {
     }
 
     return (
-        <header className='nav_bar'>
+        <header className='nav-bar'>
             <nav className='branding'>
             <Link to='/' style={{borderBottom: "none"}}> 
                 <h1>
-                    <span className='logo'>{"//"}</span>
+                    <span className='logo'>{"**"}</span>
                     Tigoni Medical
                 </h1>
                 </Link>

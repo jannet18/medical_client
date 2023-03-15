@@ -1,0 +1,81 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.navigation * {
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.branding {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.branding h1 {
+    font-weight: bold;
+}
+
+.logo {
+    color: white;
+    font-size: 1.25em;
+    margin-left: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .navigation a{
+    text-decoration: none;
+    border-bottom: none;
+  }
+  .navigation a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
+  }
+  .navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .navigation a.active{
+    color: white;
+    border-bottom: 2px solid white;
+  }.logo {
+  color: white;
+  font-size: 1.25em;
+  margin-left: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.navigation a{
+  text-decoration: none;
+  border-bottom: none;
+}
+.navigation a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: right;
+  transition: transform 0.25s ease-out;
+}
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.navigation a.active{
+  color: white;
+  border-bottom: 2px solid white;
+}
